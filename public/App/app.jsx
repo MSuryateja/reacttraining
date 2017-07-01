@@ -1,22 +1,13 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
-var {Route, Router, IndexRoute, hashHistory} = require('react-router');
-var Main = require('Main');
-var Weather = require('Weather');
-var About = require('About');
-var Locators = require('Locators');
-var Services = require('Services');
+//require('./redux-demo1.jsx');
+//var redux1 = require('./redux-demo1.jsx');
 
-var firstName = 'Hyderabad';
+
+
 ReactDOM.render(
-  <Router history={hashHistory}>
-  <Route path="/" component={Main}>
-   <Route path="/About" component={About}/>
-   <Route path="/Services" component={Services}/>
-   <Route path="/Locators" component={Locators}/>
-   <IndexRoute component={Weather}/>
-  </Route>
-  </Router>,  
-  // <Weather city={firstName}/>,
+  <p>redux example</p>,
   document.getElementById('app')
 );
+
+require('./redux-demo2.jsx');
